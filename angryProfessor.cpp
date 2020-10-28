@@ -5,3 +5,11 @@ string angryProfessor(int k, vector<int> a) {
         return "NO";
     return "YES";
 }
+
+
+string angryProfessor(int k, vector<int> a) {
+    sort(a.begin(), a.end());
+    if (a[k-1] <= 0)
+        return "NO";
+    return "YES";
+}
